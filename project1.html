@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="" id="theme-style">
+    <title>Project</title>
+</head>
+
+<body>
+    <div id="container">
+        <a href="index.html"><i class="fa fa-circle-chevron-left"></i> Go Back</a>
+        <h1>Digital Resume</h1>
+
+        <ul>
+            <li><a class="project-link" href="">Source Code</a></li>
+        </ul>
+
+        <p>
+            Digital version of my resume built and deployed using HTML, CSS and little bit of JavaScript.
+        </p>
+        <p>
+            It Contains all of Work History, Projects that I made, my Education details, Social Profiles etc.,
+        </p>
+
+        <ul>
+            <li><strong>Technologies used:</strong>HTML, CSS, JavaScript and Github</li>
+            <li>Built with basic CSS Flex layouts, Custom CSS Properties, Dark & Light theme toggling using JavaScript
+            </li>
+            <li>Theme settings will be stored in local storage. So, even user reloads/re-opens the last stored theme
+                will be apllied</li>
+            <li>Deployments will be triggered automatically as soon as the new source code reaches the mainline branch
+            </li>
+            <li>Deployed for free using: <strong>Github Pages</strong></li>
+        </ul>
+    </div>
+
+    <script>
+        // Init DOM Elements
+        const styleSrc = document.getElementById('theme-style')
+
+        // look in localStorage for previous session theme data
+        const theme = localStorage.getItem('theme')
+
+        if (theme == 'dark') {
+            styleSrc.href = "styles/dark.css"
+        }
+        else {
+            styleSrc.href = ""
+        }
+    </script>
+</body>
+
+</html>

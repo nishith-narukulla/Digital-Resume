@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="" id="theme-style">
+    <title>Project</title>
+</head>
+
+<body>
+    <div id="container">
+        <a href="index.html"><i class="fa fa-circle-chevron-left"></i> Go Back</a>
+        <h1>Single Phase Multi-Level Inverter</h1>
+
+        <ul>
+            <li><a class="project-link" href="">Source Code</a></li>
+        </ul>
+
+        <p>
+            Designed a basic Single Phase Multi-Level Inverter to converts fixed DC supply to variable frequency AC
+            supply.
+        </p>
+        <p>
+            The speed of AC machines responds to variations in input frequency.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Technologies used:</strong>
+                Arduino IDE, Arduino Programming, PCB Designing, Circuit Functionality Testing, Proteus
+            </li>
+            <li>
+                First AC is converted into DC and then converted into variable frequency AC
+            </li>
+            <li>
+                Variable frequency is done using <abbr title="Pulse Width Modulation">PWM</abbr> technique
+            </li>
+            <li>And for the pure sine output <abbr title="Sinusoidal Pulse Width Modulation">SPWM</abbr> or <abbr
+                    title="Space Vector Modulation">SVM</abbr>
+                techniques are the
+                better options</li>
+        </ul>
+    </div>
+
+    <script>
+        // Init DOM Elements
+        const styleSrc = document.getElementById('theme-style')
+
+        // look in localStorage for previous session theme data
+        const theme = localStorage.getItem('theme')
+
+        if (theme == 'dark') {
+            styleSrc.href = "styles/dark.css"
+        }
+        else {
+            styleSrc.href = ""
+        }
+    </script>
+</body>
+
+</html>

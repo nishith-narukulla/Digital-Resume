@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="" id="theme-style">
+    <title>Project</title>
+</head>
+
+<body>
+    <div id="container">
+        <a href="index.html"><i class="fa fa-circle-chevron-left"></i> Go Back</a>
+        <h1>Energy Monitoring System using Raspberry pi</h1>
+
+        <ul>
+            <li><a class="project-link" href="">Any Other Links</a></li>
+        </ul>
+
+        <p>
+            Built a system that measures energy consumption and other electrical parameters like voltage,
+            current and power factor using Raspberry pi micro-controller and sensors.
+        </p>
+        <p>
+            And Built a GUI using Python pyQT5 module to show the data to the consumer.
+        </p>
+
+        <ul>
+            <li><strong>Technologies used:</strong>Python, QTdesigner, Proteus</li>
+            <li>Raspberry Pi completely programmable with Python and support wide range of Interfacing options</li>
+            <li>This system will be capable of monitoring four appliances and store data separately</li>
+            <li>Accuracy is much better</li>
+            <li>ADC's are used to convert sensor analog data to Digital</li>
+        </ul>
+    </div>
+
+    <script>
+        // Init DOM Elements
+        const styleSrc = document.getElementById('theme-style')
+
+        // look in localStorage for previous session theme data
+        const theme = localStorage.getItem('theme')
+
+        if (theme == 'dark') {
+            styleSrc.href = "styles/dark.css"
+        }
+        else {
+            styleSrc.href = ""
+        }
+    </script>
+</body>
+
+</html>
