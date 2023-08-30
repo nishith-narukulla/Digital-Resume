@@ -27,7 +27,8 @@ body {
 
 p,
 span,
-li {
+li,
+em {
   color: var(--secondaryTextColor);
   font-size: 1em;
 }
